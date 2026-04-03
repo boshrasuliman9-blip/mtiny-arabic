@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لعبة المشاعر - اللعب</title>
+  <!-- Edited by: boshra suliman -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <main class="container">
+
+    <!-- Level badge + mission -->
+    <div id="levelBadge" class="level-badge">المستوى 1</div>
+    <div id="missionBox" class="mission-box"></div>
+
+    <div id="targetBox" class="target-box hidden">ابحث عن: <strong><span id="targetName"></span></strong></div>
+    <div id="scoreBox" class="score-box hidden">النقاط: 0 / 5</div>
+    <div id="progressBox" class="progress-box hidden"></div>
+
+    <div id="lvl3StatusBox" class="lvl3-status hidden">
+      اضغط على المشاعر بالترتيب الصحيح:
+      <div id="lvl3ProgressRow" class="lvl3-progress-row"></div>
+    </div>
+
+    <div id="choicesGrid" class="grid"></div>
+
+    <div id="resultBox" class="result hidden"></div>
+
+    <div id="summaryContainer" class="summary-container hidden">
+      <h2>سلسلة المستوى 2 الخاصة بك</h2>
+      <div id="summaryBox" class="summary-grid"></div>
+    </div>
+
+    <!-- Level 3: memorise the series -->
+    <div id="lvl3MemoryBox" class="lvl3-memory-box hidden">
+      <h2>احفظ هذا الترتيب!</h2>
+      <div id="lvl3SeriesRow" class="lvl3-series-row"></div>
+      <div id="lvl3Countdown" class="lvl3-countdown"></div>
+    </div>
+
+    <!-- Success overlay -->
+    <div id="successOverlay" class="success-overlay hidden">
+      <div class="success-overlay-content">
+        <div id="overlayMessage" class="overlay-message"></div>
+        <button id="overlayNextBtn" class="start">متابعة</button>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button id="restartBtn" class="start hidden">🔁 العب مرة أخرى</button>
+      <button id="nextlvl" class="start hidden">← متابعة</button>
+    </div>
+  </main>
+
+  <footer style="text-align:center; padding:10px; font-size:14px; color:#888;">Developed by: Boshra Suliman</footer>
+  <script src="script.js"></script>
+</body>
+</html>
